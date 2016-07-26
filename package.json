@@ -1,0 +1,41 @@
+{
+  "name": "gollum-nocinema-cli",
+  "version": "0.1.0",
+  "description": "Gollum-cli is a command line interface to gollum-cinema package",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "gollum": "cli.js"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register --recursive tests/ --timeout 60000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandoguedes/gollum-cli.git"
+  },
+  "keywords": [
+    "crawler",
+    "nocinema",
+    "gollum",
+    "cinema",
+    "schedules",
+    "cli"
+  ],
+  "author": "Luís Fernando Guedes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandoguedes/gollum-cli/issues"
+  },
+  "homepage": "https://github.com/fernandoguedes/gollum-cli#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "gollum-nocinema": "^0.2.1"
+  }
+}
